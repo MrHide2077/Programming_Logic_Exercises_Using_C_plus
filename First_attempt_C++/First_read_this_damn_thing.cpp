@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <cmath>
+#include <numbers>
 using namespace std;
 int main() {
 	cout << "Hello World!\n";
@@ -231,4 +232,58 @@ int main() {
 		cout << message;
 		cout << endl;
 
+		//This time lets talk about switch statements, this is used to perform a block of code based on the value of a variable. The syntax is: switch (variable) { case value: // block of code break; default: // block of code }
+		//Plz don't forgret to use the damn break statemente. If you don't use it, the fuck algoritm will execute every case
+		//Let's try this shit
+		int day = 1;
+		switch (day) {
+			case 1:
+				cout << "Monday" << "\n";
+				break;
+			case 2:
+				cout << "Tuesday" << "\n";
+				break;
+			case 3:
+				cout << "Wednesday" << "\n";
+				break;
+			case 4:
+				cout << "Thursday" << "\n";
+				break;
+			case 5:
+				cout << "Friday" << "\n";
+				break;
+			case 6:
+				cout << "Saturday" << "\n";
+				break;
+			case 7:
+				cout << "Sunday" << "\n";
+				break;
+			case 8: 
+				cout << "Not so smart right?" << "\n";
+				break;
+			default:
+				cout << "Have a nice day dude!" << "\n";
+			}
+
+		//Damn now we are talkin serious. Loops, this is used to perform a block of code multiple times. We have three types of loops: for, while and do-while. Let's start with for loop, this is used to perform a block of code a specific number of times. The syntax is: for (initialization; condition; increment) { // block of code }
+		//Let's start whith the "while" loop, this is used to perform a block of code while a condition is true. The syntax is: while (condition) { // block of code }
+		//It's damn similar to Java
+		int damnOption = 10;
+		while (damnOption > 0) {
+			cout << "Damn, this is a while loop!" << "\n";
+			damnOption--;
+			cout << damnOption << "\n";
+		}
+		//This thing will be running till the damnOption is 0, because the condition is true. When the damnOption is 0, the condition will be false and the loop will stop.
+
+		//Now let's talk about the "do-while" loop, this is used to perform a block of code at least once, and then while a condition is true. The syntax is: do { // block of code } while (condition);
+		int secondDamnOption = 10;
+		do {
+			cout << "Damn, this is crazy..." << (secondDamnOption *= std::numbers::pi) << "\n";
+		} while (secondDamnOption>0);
+		//For this example, the secondDamnOption will be multiplied by pi, and the damnOption will be greater than 0, so the loop will run forever. But if you change the condition to secondDamnOption < 0, the loop will run once and then stop. And use()
+
+
+
+		return 0;
 	}

@@ -309,5 +309,14 @@ int main() {
 		}
 		cout << endl;
 
+		//Now this is  turning hard, Arrays are the boss for now, this is used to store multiple values in a single variable. The syntax is: type arrayName[arraySize]
+		//Arrays are used to store multiple values of the same type in a single variable. The syntax is: type arrayName[arraySize]
+		int myfirstarray[5] = { 1, 2, 3, 4, 5 }; // This is used to declare an array of integers with 5 elements	
+		//We can read the vLUES of the array using the index, the index starts at 0 and goes to arraySize-1
+		cout << "The first value of the array is: " << myfirstarray[3] << "\n"; // This is used to read the first value of the array (myfirstarray[0])
+		//And yeah, you can change the value of the array using the index
+		myfirstarray[3] = 158236;
+		cout << "The new value of the array is: " << myfirstarray[3] << "\n";
+
 		return 0;
 	}

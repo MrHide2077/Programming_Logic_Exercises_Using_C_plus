@@ -1,7 +1,7 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\users\\diego\\source\\repos\\first_attempt_c++\\first_attempt_c++\\first_read_this_damn_thing.cpp",
+        "Source": "c:\\users\\diego\\source\\repos\\programming_logic_exercises_using_c-\\first_attempt_c++\\first_read_this_damn_thing.cpp",
         "ProvidedModule": "",
         "Includes": [
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\iostream",

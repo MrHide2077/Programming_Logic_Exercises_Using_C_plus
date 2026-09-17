@@ -274,6 +274,7 @@ int main() {
 			damnOption--;
 			cout << damnOption << "\n";
 		}
+		cout << endl;
 		//This thing will be running till the damnOption is 0, because the condition is true. When the damnOption is 0, the condition will be false and the loop will stop.
 
 		//Now let's talk about the "do-while" loop, this is used to perform a block of code at least once, and then while a condition is true. The syntax is: do { // block of code } while (condition);
@@ -281,9 +282,32 @@ int main() {
 		do {
 			cout << "Damn, this is crazy..." << (secondDamnOption *= std::numbers::pi) << "\n";
 		} while (secondDamnOption>0);
+		cout << endl;
 		//For this example, the secondDamnOption will be multiplied by pi, and the damnOption will be greater than 0, so the loop will run forever. But if you change the condition to secondDamnOption < 0, the loop will run once and then stop. And use()
 
+		//Now we already saw the break word in switch statements, but it can also be used in loops, this is used to break out of a loop. The syntax is: break; Let's try this shit
+		int thirdoption = 30;
+		for (int i = 0; i < thirdoption; i++) {
+			cout << "Damn, this is another damn loop! :" << i << "\n";
+			if (i==15) {
+				cout << "Yeah, we arrive to the limit of the loop using break statement" << "\n";
+				break;
+			}
+		}
+		cout << endl;
 
+		//And continue  keyword is used to skip the current iteration of a loop and continue with the next iteration. The syntax is: continue; Let's try this shit
+		int fourthoption = 30;
+		for (int i = 0; i < fourthoption; i++) {
+			if (i == 15) {
+				cout << endl;
+				cout << "Skipping iteration, in the damn middle..." << i <<"\n";
+				cout << endl;
+				continue;
+			}
+			cout << "Damn, this is another damn loop! :" << i << "\n";
+		}
+		cout << endl;
 
 		return 0;
 	}

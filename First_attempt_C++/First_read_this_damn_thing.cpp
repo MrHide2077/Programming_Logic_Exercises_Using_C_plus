@@ -2,6 +2,7 @@
 #include <string>
 #include <cmath>
 #include <numbers>
+#include <vector>	
 using namespace std;
 int main() {
 	cout << "Hello World!\n";
@@ -317,6 +318,51 @@ int main() {
 		//And yeah, you can change the value of the array using the index
 		myfirstarray[3] = 158236;
 		cout << "The new value of the array is: " << myfirstarray[3] << "\n";
+		cout << endl;	
+
+		//Let's warm up dude, cause' now we are gonna use arrays throught loops, this is used to perform a block of code multiple times for each element of the array. The syntax is: for (int i = 0; i < arraySize; i++) { // block of code }
+		int mysecondarray[5] = { 1, 2, 3, 4, 5 }; // This is used to declare an array of integers with 5 elements
+		for (int i = 0; i < 5; i++) {
+			cout << "The value of the god damn array is: " << mysecondarray[i] << "\n"; // This is used to read the value of the array (mysecondarray[i])
+			cout << endl;
+		}
+
+		//The foreach loop is used to perform a block of code for each element of the array. The syntax is: for (type element : array) { // block of code }
+		for (int anothernum : mysecondarray) {
+			cout << anothernum << "\n"; // This is used to read the value of the array (anothernum)
+		}
+		cout << endl;
+
+		//And also you can ommit the size of the array, and the compiler will automatically detect the size of the array. The syntax is: type arrayName[] = { value1, value2, value3, ... }
+		int myfourtharray[] = { 5, 10, 15, 20, 25 }; // This is used to declare an array of integers with 5 elements
+		for (int i = 0; i < 5; i++) {
+			cout << "The value of the third god damn array is: " << myfourtharray[i] << "\n";
+			cout << endl;
+		}
+		//But for good practices, it's better to declare the size of the array, because if you don't declare the size of the array, the compiler will automatically detect the size of the array, but if you change the size of the array, you have to change the size of the loop too. So it's better to declare the size of the array, and use a constant variable to store the size of the array. The syntax is: const int arraySize = 5; type arrayName[arraySize] = { value1, value2, value3, ... }
+		
+		//Ommit elements of declaration
+		//It's also possible to omit the elements of the array declaration, and the compiler will automatically initialize the elements of the array to 0. The syntax is: type arrayName[arraySize] = { value1, value2, ... }
+		//Buuuuut, you have to declare the size of the array, if you didn't do it well... you're fucked
+		int myfourtharray2[5];
+		myfourtharray2[0] = 10;
+		myfourtharray2[1] = 20;
+		myfourtharray2[2] = 30;
+		myfourtharray2[3] = 40;
+		myfourtharray2[4] = 50;
+		
+		for (int anotherdamnnumb : myfourtharray) {
+			cout << "The value of a ommited element of the array is: " << anotherdamnnumb << "\n";
+		}
+		cout << endl;	
+
+		//Fuck off, now VECTORS, this is used to store multiple values in a single variable, but unlike arrays, vectors can change their size dynamically. The syntax is: vector<type> vectorName; Let's try this shit
+		vector<string> myFirstVector = {"Adam", "Lambert", "Ash"}; // This is used to declare a vector of strings
+		myFirstVector.push_back("Ripley"); // This is used to add a value to the end of the vector (push_back())......
+		for (string myshtnumb:myFirstVector) {
+			cout << "The value of an element in the vector is...  " << myshtnumb << "\n";
+		}
+		cout << endl;
 
 		return 0;
 	}

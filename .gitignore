@@ -1,3 +1,9 @@
 .vs/
 x64/
 Debug/
+
+x64/
+Debug/
+*.obj
+*.pdb
+*.idb
